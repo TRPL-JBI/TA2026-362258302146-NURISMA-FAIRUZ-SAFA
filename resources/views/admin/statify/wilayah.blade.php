@@ -404,24 +404,24 @@ const warnaMarker = warna[{{ $item->id_subsektor }}] ?? "#007aff";
 
 const icon = L.divIcon({
 
-className:"",
+    className: "",
 
-iconSize:[20,20],
+    iconSize: [12, 12],
 
-html:`
+    iconAnchor: [6, 6],
 
-<div
-style="
-width:18px;
-height:18px;
-border-radius:50%;
-background:${warnaMarker};
-border:3px solid white;
-box-shadow:0 0 8px rgba(0,0,0,.35);
-">
-</div>
+    html: `
 
-`
+        <div style="
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: ${warnaMarker};
+            border: 2px solid white;
+            box-shadow: 0 0 4px rgba(0,0,0,.3);
+        "></div>
+
+    `
 
 });
 

@@ -50,7 +50,7 @@ Route::get('/verify-email/{id}/{hash}', function ($id, $hash, Request $request) 
         $user->markEmailAsVerified();
     }
 
-    return redirect("http://localhost:3000/email-success");
+    return redirect("https://ideahub.my.id/email-success");
 
 })->name('verification.verify');
 

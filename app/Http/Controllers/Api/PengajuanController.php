@@ -33,7 +33,7 @@ class PengajuanController extends Controller
         |--------------------------------------------------------------------------
         */
         if (!$statusTerakhir) {
-            $jenisPengajuan = 'baru';
+            $jenisPengajuan = 'pendaftaran_baru';
         }
         /*
         |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ class PengajuanController extends Controller
         |--------------------------------------------------------------------------
         */
         elseif ($statusTerakhir->status_verifikasi == 'disetujui') {
-            $jenisPengajuan = 'perubahan';
+            $jenisPengajuan = 'perubahan_data';
         }
         /*
         |--------------------------------------------------------------------------
@@ -59,7 +59,7 @@ class PengajuanController extends Controller
         |--------------------------------------------------------------------------
         */
         else {
-            $jenisPengajuan = 'baru';
+            $jenisPengajuan = 'pendaftaran_baru';
         }
 
         $pengajuan = Verifikasi::create([
@@ -78,7 +78,7 @@ class PengajuanController extends Controller
         ]);
 
         return response()->json([
-            'message' => $jenisPengajuan === 'baru'
+            'message' => $jenisPengajuan === 'pendaftaran_baru'
                 ? 'Pendaftaran berhasil dikirim.'
                 : 'Perubahan data berhasil diajukan dan sedang menunggu verifikasi admin.',
             'data' => $pengajuan
@@ -101,7 +101,7 @@ class PengajuanController extends Controller
         'id_user',
         auth()->id()
     )
-    ->where('jenis_pengajuan', 'perubahan')
+    ->where('jenis_pengajuan', 'perubahan_data')
     ->where('status_verifikasi', 'menunggu')
     ->exists();
 
@@ -123,7 +123,7 @@ class PengajuanController extends Controller
         'id_wilayah' => $request->id_wilayah,
         'link_gmaps' => $request->link_gmaps,
         'nomor_telp' => $request->nomor_telp,
-        'jenis_pengajuan' => 'perubahan',
+        'jenis_pengajuan' => 'perubahan_data',
         'status_verifikasi' => 'menunggu',
         'catatan' => null,
         'tanggal_verifikasi' => null,

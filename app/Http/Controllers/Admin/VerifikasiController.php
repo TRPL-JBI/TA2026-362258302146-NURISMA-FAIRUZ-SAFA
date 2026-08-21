@@ -102,7 +102,7 @@ public function update(Request $request, $id)
         |--------------------------------------------------------------------------
         */
 
-        if ($verifikasi->jenis_pengajuan === 'perubahan') {
+        if ($verifikasi->jenis_pengajuan === 'perubahan_data') {
 
             if ($pelaku) {
 
