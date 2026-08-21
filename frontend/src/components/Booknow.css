@@ -1,0 +1,92 @@
+.Booknow {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px;
+}
+
+.Booknow-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+.Booknow-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.Booknow-image img {
+  max-width: 350px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+.Booknow-content {
+  flex: 1;
+  text-align: left;
+}
+
+.Booknow-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #a00000;
+  letter-spacing: 4px;
+}
+
+.Booknow-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.Booknow-content button {
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease, transform 0.2s ease;
+  animation: pulse 2s infinite;
+}
+
+.Booknow-content button:hover {
+  background: linear-gradient(135deg, #ffdd44, #e68a00);
+  transform: scale(1.1);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.25);
+}
+
+.Booknow-content button:active {
+  transform: scale(0.95);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+  .Booknow-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Booknow-content {
+    text-align: center;
+  }
+}

@@ -1,0 +1,81 @@
+.map-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.map-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #FBC02D;
+  letter-spacing: 7px;
+}
+
+.map-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.map-wrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Floating Card di Atas Peta */
+.map-overlay-card {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Agar melayang di atas peta */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px); /* Efek Glassmorphism */
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.overlay-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay-number {
+  font-weight: 800;
+  font-size: 18px;
+  color: #10b981;
+}
+
+.overlay-label {
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.overlay-divider {
+  width: 1px;
+  height: 25px;
+  background-color: #e5e7eb;
+}
+
+.overlay-btn {
+  background-color: #10b981;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.overlay-btn:hover {
+  background-color: #059669;
+}

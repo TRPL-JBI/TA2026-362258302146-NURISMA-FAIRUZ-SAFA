@@ -1,0 +1,113 @@
+.tentang {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 160px 40px 60px 40px; /* tambahkan padding-top lebih besar */
+  background:#fff;
+}
+
+.tentang-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.tentang-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.tentang-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.tentang-image img {
+  max-width: 250px;
+  height: auto;
+}
+
+.tentang-content {
+  flex: 2;
+  text-align: left;
+}
+
+.tentang-content h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #c0392b;
+  letter-spacing: 4px;
+}
+
+.tentang-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.judul-merah {
+  color: #b22222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tentang-content button {
+  padding: 12px 30px;
+  background: #b22222;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.tentang-content button:hover {
+  background: #8b1a1a;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .tentang-container,
+  .tentang-container.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tentang-content {
+    text-align: center;
+  }
+  .tentang-image img {
+    max-width: 220px;
+    margin-bottom: 20px;
+  }
+}
+
+.youtube-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.youtube-thumbnail {
+  max-width: 360px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.youtube-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay tombol play */
+.youtube-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+  pointer-events: none; /* biar klik tetap ke link */
+}

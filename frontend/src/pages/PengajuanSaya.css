@@ -1,0 +1,161 @@
+.pengajuan-container {
+  padding: 120px 40px 60px 40px; 
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff 0%, #fff8f0 100%); 
+  display: flex;
+  flex-direction: column;
+}
+
+.pengajuan-container h1 {
+  text-align: center; /* Diubah ke center */
+  color: #052049; 
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.subtitle {
+  text-align: center; /* Diubah ke center */
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 40px;
+  max-width: 600px; /* Menyamakan batas lebar dengan empty-card */
+  margin-left: auto;  /* Mengatur margin otomatis kanan-kiri agar pas di tengah */
+  margin-right: auto;
+}
+
+/* Mengubah tampilan card utama agar mirip dengan shadow/style .stat-card */
+.empty-card {
+  background: #fff;
+  padding: 50px 45px;
+  border-radius: 12px;
+  box-shadow: 45px 15px 10px rgba(5, 32, 73, 0.06); /* Shadow tebal khas Statify */
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto; /* Supaya tetap di tengah secara horizontal */
+}
+
+.empty-icon {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.empty-card h2 {
+  color: #052049;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.empty-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Tombol aksi menggunakan skema warna Statify agar serasi */
+/* Mengubah tombol Daftar Sekarang agar persis seperti sipintar-btn */
+.empty-card button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #ff9800, #e65100); /* Gradient oranye ke merah bata */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Efek hover ketika kursor diarahkan ke tombol */
+.empty-card button:hover {
+  background: linear-gradient(to right, #e65100, #bf360c); /* Gradient bergeser lebih gelap */
+  transform: translateY(-2px); /* Efek sedikit terangkat saat di-hover */
+}
+
+/* Style untuk list pengajuan jika nanti datanya ada */
+.pengajuan-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(5, 32, 73, 0.04);
+}
+
+.pengajuan-card h2 {
+  color: #052049;
+}
+
+.status {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.waiting {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:600;
+    margin:20px 0;
+}
+
+.status.waiting{
+    background:#FFF3CD;
+    color:#856404;
+}
+
+.status.approved{
+    background:#D4EDDA;
+    color:#155724;
+}
+
+.status.rejected{
+    background:#F8D7DA;
+    color:#721C24;
+}
+
+.pengajuan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.jenis-pengajuan {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.jenis-pengajuan.baru {
+  background: #e8f0fe;
+  color: #1a4d9c;
+}
+
+.jenis-pengajuan.perubahan {
+  background: #fff0d9;
+  color: #b45309;
+}
+
+.catatan {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff3cd;
+  color: #856404;
+}
+
+.tanggal {
+  margin-top: 20px;
+  color: #666;
+  font-size: 13px;
+}

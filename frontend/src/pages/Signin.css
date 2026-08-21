@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.signin-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* gambar kiri & kanan */
+.side-img {
+  position: absolute;
+  bottom: 200px; /* sama dengan forgotpassword */
+  width: 220px;
+  z-index: 0;
+}
+
+.side-img.left {
+  left: 0;
+}
+
+.side-img.right {
+  right: 0;
+}
+
+/* card */
+.signin-card {
+  width: 200%;
+  max-width: 500px;
+  background: #fff;
+  padding: 1.5rem; /*UBAH UKURAN CARDDDDDDDDDDDDD*/
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+.signin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.signin-header h4 {
+  font-size: 14px;
+  color: #666;
+}
+.signin-header a {
+  color: #f7941d;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.signin-card h2 {
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* wrapper untuk password + icon mata */
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* kasih space buat icon */
+}
+
+.toggle-password {
+  position: absolute;
+  top: 20%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+.forgot-link {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.forgot-link a {
+  font-size: 14px;
+  color: #f7941d;
+  text-decoration: none;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f7941d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}

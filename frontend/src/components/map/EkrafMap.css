@@ -1,0 +1,141 @@
+.Dashboard {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ffe4b5, #fffaf0);
+  padding: 170px 40px 60px 40px;
+}
+
+.Dashboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* biar konten ga terlalu melebar */
+  gap: 40px;
+}
+
+.Dashboard-content {
+  flex: 1;
+  text-align: left; /* teks rata kiri */
+}
+
+.Dashboard-content h2 {
+  font-size: 45px;
+  margin-bottom: 5px;
+  color: #a00000;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 16px;
+}
+
+.Dashboard-content h3 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 16px;
+}
+
+.Dashboard-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Dashboard-content button {
+  padding: 10px 20px;
+  background: #FBC02D;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.Dashboard-content button:hover {
+  background: #be9223;
+}
+
+.Dashboard-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.Dashboard-image img {
+  max-width: 350px;
+  height: auto;
+  margin-left: 190px;
+}
+
+/* =========================
+   MAP LEGEND
+========================= */
+
+.map-legend {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  padding: 14px 16px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+
+  z-index: 1000;
+
+  width: 230px;
+  max-height: 320px;
+
+  overflow-y: auto;
+}
+
+.map-legend-title {
+  font-size: 15px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  color: #333;
+
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.map-legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-size: 12px;
+  color: #555;
+}
+
+.legend-marker {
+  width: 12px;
+  height: 12px;
+
+  min-width: 12px;
+
+  border-radius: 50%;
+
+  border: 2px solid white;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.legend-label {
+  line-height: 1.3;
+}

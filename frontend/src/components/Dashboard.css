@@ -1,0 +1,171 @@
+.Dashboard {
+  min-height: 100vh; /* penuh 1 layar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ffe4b5, #fffaf0);
+  background-attachment: fixed; /* efek parallax */
+  padding: 0 40px; /* hilangkan padding atas besar */
+  margin: 0; /* pastikan tidak ada margin tambahan */
+}
+
+
+.Dashboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.Dashboard-content {
+  flex: 1;
+  text-align: left;
+}
+
+.Dashboard-content h2 {
+  font-size: 45px;
+  margin-bottom: 5px;
+  color: #a00000;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 16px;
+}
+
+.Dashboard-content h3 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 16px;
+}
+
+.Dashboard-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Dashboard-content button {
+  padding: 12px 28px;
+  background: #FBC02D;
+  color: black;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.Dashboard-content button:hover {
+  background: #be9223;
+  transform: scale(1.08);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.Dashboard-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.Dashboard-image img {
+  max-width: 350px;
+  height: auto;
+  margin-left: 190px;
+  transition: transform 0.4s ease;
+}
+
+.Dashboard-image img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.auth-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+/* --- PERBAIKAN BOX PUTIH --- */
+.user-dashboard-card {
+  background: #fff;
+  padding: 20px 24px; 
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+  margin-top: 1px;
+  width: 100%;
+  max-width: 480px; 
+  animation: fadeUp .4s ease;
+  box-sizing: border-box;
+}
+
+.user-dashboard-card h5 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+
+.user-dashboard-card h6 {
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  text-transform: none; 
+}
+
+
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px; 
+  border-radius: 10px;
+}
+
+.status-box.waiting {
+  background: #fff8e1;
+  border-left: 5px solid #fbc02d;
+}
+
+.status-icon {
+  font-size: 20px; /* Mengecilkan ukuran bulatan kuning */
+  display: flex;
+  align-items: center;
+}
+
+.status-text {
+  font-size: 14px; /* Ukuran teks status disesuaikan */
+  color: #333;
+  line-height: 1.4;
+}
+
+.status-text strong {
+  font-size: 14px;
+  color: #000;
+}
+
+.status-box.approved{
+    background:#e8f8ee;
+    color:#2e7d32;
+    border-left:5px solid #4caf50;
+}
+
+.status-box.rejected{
+    background:#fdeaea;
+    color:#c62828;
+    border-left:5px solid #f44336;
+}
+
+.status-box.waiting{
+    background:#fff8e1;
+    color:#ff9800;
+    border-left:5px solid #ffc107;
+}

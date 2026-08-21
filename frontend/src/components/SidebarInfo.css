@@ -1,0 +1,144 @@
+/* ===== Sidebar Container ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+  padding: 16px; /* Dikurangi dari 20px agar konten lebih ke atas */
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 3000;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* ===== Header Atas (Logo + Close) ===== */
+.sidebar-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  height: 38px; /* Diperkecil sedikit agar presisi */
+  width: auto;
+  object-fit: contain;
+}
+
+.sidebar-header-top h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Tombol Close Modern */
+.close-btn {
+  background: #f4f4f5;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  background: #e4e4e7;
+  color: #000;
+}
+
+/* ===== Konten Utama ===== */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Card Header Usaha */
+.business-card {
+  background: linear-gradient(135deg, #fff9f0 0%, #fff3e0 100%);
+  border: 1px solid #ffe0b2;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.business-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d84315;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-subsektor {
+  display: inline-block;
+  background: #ff9800;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* Informasi List */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-left: 4px solid #ff9800; /* Aksen garis oranye di samping */
+}
+
+.info-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+  word-break: break-word;
+}

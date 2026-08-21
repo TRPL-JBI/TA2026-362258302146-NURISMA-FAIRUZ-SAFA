@@ -1,0 +1,54 @@
+.statify-jumlah-page {
+  padding: 120px 40px 60px 40px; /* tambahkan padding-top lebih besar */
+  background: linear-gradient(180deg,#fff 0%, #fff8f0 100%);
+  border-radius: 16px;
+}
+
+.statify-jumlah-page h2 {
+  text-align: center;
+  color: #052049;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.stat-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 18px;
+}
+.stat-card {
+  background: #fff;
+  padding: 50px 45px;
+  border-radius: 12px;
+  box-shadow: 45px 15px 10px rgba(5,32,73,0.06);
+  min-width: 160px;
+}
+.stat-card h3 { color: #052049; font-size: 22px; margin: 0 0 6px; }
+.stat-card p { margin: 0; color: #666; font-size: 13px; }
+
+/* Filter */
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+  justify-content: flex-start;
+  padding-left: 6%;
+}
+.filter-row label { font-weight: 600; color: #333; }
+.filter-row select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Chart card */
+.chart-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(5,32,73,0.04);
+  margin-top: 6px;
+}

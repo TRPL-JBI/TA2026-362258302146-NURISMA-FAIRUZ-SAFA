@@ -1,0 +1,123 @@
+.statify-wilayah-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Wrapper Filter Melayang di Atas Peta */
+.subsektor-filter-wrapper {
+  position: absolute;
+  top: 85px; /* Sesuaikan jarak dari navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 900px;
+  pointer-events: none;
+}
+
+/* Container Scroll Horizontal */
+.subsektor-scroll-container {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 8px 12px;
+  pointer-events: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.subsektor-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Button Pill Style */
+.chip-button {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e0e0e0;
+  color: #333;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  backdrop-filter: blur(4px);
+}
+
+.chip-button:hover {
+  background: #ffffff;
+  transform: translateY(-1px);
+}
+
+.chip-button.active {
+  background: #e65100;
+  color: #ffffff;
+  border-color: #e65100;
+  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.35);
+}
+
+.loading-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* ==============================
+   PETUNJUK SWIPE FILTER
+================================ */
+
+.swipe-hint {
+  text-align: center;
+  margin-top: 3px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #555;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 4px 12px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .subsektor-filter-wrapper {
+    top: 75px;
+    width: 94%;
+  }
+
+  .swipe-hint {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
+  .chip-button {
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+}

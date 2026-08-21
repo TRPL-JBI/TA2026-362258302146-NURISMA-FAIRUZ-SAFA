@@ -1,0 +1,134 @@
+.update-page {
+    min-height: 100vh;
+    padding: 120px 40px 60px;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fff8f0 100%
+    );
+}
+
+.update-header {
+    max-width: 850px;
+    margin: 0 auto 30px;
+}
+
+.update-header h1 {
+    margin: 0;
+    color: #052049;
+    font-size: 34px;
+}
+
+.update-header p {
+    color: #666;
+    margin-top: 8px;
+}
+
+.update-card {
+    max-width: 850px;
+    margin: 0 auto;
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(5, 32, 73, 0.08);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #052049;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #ff9800;
+}
+
+.form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background: #eee;
+    color: #555;
+}
+
+.submit-button {
+    background: linear-gradient(
+        to right,
+        #ff9800,
+        #e65100
+    );
+    color: white;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+    .update-page {
+        padding: 100px 20px 40px;
+    }
+
+    .update-card {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-button,
+    .submit-button {
+        width: 100%;
+    }
+
+}

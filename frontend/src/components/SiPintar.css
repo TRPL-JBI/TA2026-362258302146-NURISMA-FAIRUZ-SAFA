@@ -1,0 +1,87 @@
+.SiPintar {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 40px;
+}
+
+.SiPintar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.SiPintar-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.SiPintar-image img {
+  max-width: 350px;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.SiPintar-image img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.SiPintar-content {
+  flex: 1;
+  text-align: left;
+}
+
+.SiPintar-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #FBC02D;
+  letter-spacing: 10px;
+}
+
+.SiPintar-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.SiPintar-content button {
+  padding: 12px 30px;
+  background: #ffa500 ;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.SiPintar-content button:hover {
+  background: #ab6f00;
+  transform: scale(1.08);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .SiPintar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .SiPintar-content {
+    text-align: center;
+  }
+
+  .SiPintar-image img {
+    max-width: 250px;
+    margin: 20px 0;
+  }
+}
